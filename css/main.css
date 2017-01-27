@@ -1,0 +1,149 @@
+
+/**/
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url("../img/bg.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.50;
+    color: #8B4513; /*цвет текста*/
+    background-color: #FFFACD; /*цвет шапки*/
+}
+
+.page-wrapper {
+    background-color: #FFFACD; /*цвет блока над шапкой*/
+}
+
+/* Boxed Layout
+---------------------------------- */
+.boxed .page-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 10px green;; /*зеленый не видно почему -то*/ 
+    box-shadow: 0px 0px 10px orange;; /*рамка главного блока оранжевая*/
+    height: 154%; /*высота общего или главного блока*/
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) {
+    .boxed .page-wrapper {
+        width: 750px;
+    }
+}
+
+/* Medium devices (desktops, tablets, 992px and up) */
+@media (min-width:992px) {
+    .boxed .page-wrapper {
+        width: 970px;
+    }
+}
+
+/* Large devices (Large desktops 1200px and up) */
+@media (min-width:1200px) {
+    .boxed .page-wrapper {
+        width: 1170px;
+    }
+}
+
+.body-img{
+    height: 366px;
+    overflow: hidden;
+	position:relative;
+}
+
+.body-img img{
+    max-width: 100%;
+    max-height: 366px;
+}
+
+.block{
+    padding: 10px 20px 40px 20px; /*верхняя слева нижняя справа? */
+    background-color: #FFFACD; /*цвет блока стоимости*/
+}
+.light-block {
+    background-color: #FFFACD; /*цвет блока наши услуги */
+    border-top: 1px solid orange; /*верхняя рамка и его толщина оранжевая*/
+    border-bottom: 1px solid orange; /*нижняя рамка */
+}
+
+.block-heading {
+    margin: 10px 0px 35px 0px;
+    text-align: center; /*тексты наши услуги и стоимость стоят в центре*/
+
+}
+
+.block-heading h2 {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 600;
+    padding: 0px 10px 6px 0px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #FFE7BA; /*полоска под текст и цвет бежевый*/
+    color: Chocolate4; /*цвета текстов наши услуги и стоимость шоколадный цвет */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.block-heading h2 span {
+    padding-bottom: 11px;
+    border-bottom: 3px solid;
+    border-color: Chocolate4; /*подчеркивание под текст шоколадного цвета*/
+    font-size: 22px;
+}
+
+.service-item{
+    text-align: center;
+    background: #FFF68F; /*цвет трех квадратиков для иконки и текста*/
+    padding: 20px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    border: none !important;
+}
+
+.service-item h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.service-item i:hover{
+    color: #9ACD32; /*зеленый цвет невидим почему-то*/
+}
+
+.table > thead > tr > th {
+    border-bottom: 1px solid #EEDC82; /*нижняя полоска таблицы первой строки продукция*/
+    background-color: #EEDD82; /*полный расркас первой строки продукция*/
+    color: Chocolate4; /*цвет текста продукция и стоимость в руб*/
+}
+
+.ul-list {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+.ul-fa-chevron-right li:before {
+    content: "\f054";
+}
+.ul-list li:before {
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -20px;
+    color: Chocolate4; /*цвет нумерации списка в виде стрелочек*/
+}
+
+.footer{
+    text-align: center;
+    background-color: #FFFACD; /*цвет нижнего или конечного блока*/
+    padding: 25px 0;
+    border-top: 2px solid orange; /*цвет верхней рамки блока*/
+}
+
+
+
